@@ -106,6 +106,7 @@ header nav ul li a {
 header nav ul li a:hover {
   background-color: #f0f0f0;
   border-radius: 5px;
+  color: var(--primary-color)
 }
 
 @media screen and (max-width: 768px) {
@@ -531,9 +532,74 @@ section.portfolio main article p {
 }
 
 /* * End of about section styles */
+/*start of project section styles*/
+section.project{
+  background: #f6f6f6;
+}
+section.project main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+section.project main .project-content{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+}
+section.project main .project-content article{
+  width:25%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  row-gap: 20px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  section.project main .project-content article {
+    width: 50%;
+  }
+  
+}
+section.project main .project-content article img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+section.project main .project-content article img:hover{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+section.project main .project-content article span{
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 20px;
+  line-height: 10px;
+  position: absolute;
+  top: 240px;
+}
+
+section.project main .project-content article h2{
+  font-size: 16px;
+}
+section.project main .project-content article h2.active{
+  color: var(--primary-color);
+  padding-left: 0px;
+
+}
+/*end project section*/
 /* Start of contact section styles */
 section.contact {
-  background-color: #f6f6f6;
+  background-color: white;
   padding: 40px 0;
   display: flex;
   flex-direction: column;
