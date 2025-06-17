@@ -597,9 +597,10 @@ section.project main .project-content article h2.active{
 
 }
 /*end project section*/
+
 /* Start of contact section styles */
 section.contact {
-  background-color: white;
+  background-color: #F6F6F6;
   padding: 40px 0;
   display: flex;
   flex-direction: column;
@@ -654,6 +655,79 @@ section.contact article:last-of-type address ul li i{
   color:#2C4755;
 }
 /*end contact style*/
+/*start skill */
+.custom-skills-section {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.custom-skills-section header h2 {
+  margin-bottom: 10px;
+}
+
+.custom-skill {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.custom-skill h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.custom-skill figure {
+  position: relative;
+  margin: 0;
+}
+
+.custom-skill progress {
+  width: 100%;
+  height: 25px;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.custom-skill progress::-webkit-progress-bar {
+  background-color: #e0dede;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.custom-skill progress::-webkit-progress-value {
+  background-color: #14d8ff;
+  border-radius: 5px;
+}
+
+.custom-percent {
+  position: absolute;
+  right: 5px;
+  top: -25px;
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  padding: 3px 6px;
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 600px) {
+  .custom-skills-section {
+    padding: 15px;
+  }
+
+  .custom-percent {
+    font-size: 11px;
+    top: -28px;
+  }
+
+  .custom-description {
+    font-size: 13px;
+  }
+}
+
+/*end skill */
 footer{
   background: #2C4755;
   text-align: center;
